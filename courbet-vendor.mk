@@ -274,7 +274,6 @@ PRODUCT_PACKAGES += \
     libaudioroute_ext \
     libhdmiedid \
     libhfp \
-    libpn553_fw \
     libsndmonitor \
     libspkrprot \
     libvideoutils \
@@ -335,6 +334,7 @@ PRODUCT_PACKAGES += \
     libmulticam_video_optical_zoom \
     libnotifyaudiohal \
     liboemcrypto \
+    libpn553_fw \
     librelight_only \
     libremosaiclib \
     libsdk_sr \
