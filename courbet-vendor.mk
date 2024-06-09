@@ -144,27 +144,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/courbet/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/xiaomi/courbet/proprietary/vendor/firmware/osc_rtp_24K_5s.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/osc_rtp_24K_5s.bin \
     vendor/xiaomi/courbet/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.sensormodule.courbet_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.courbet_imx355_ultra.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.sensormodule.courbet_imx471_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.courbet_imx471_front.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.sensormodule.courbet_ofilm_imx471.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.courbet_ofilm_imx471.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.sensormodule.courbet_ofilm_s5k5e9.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.courbet_ofilm_s5k5e9.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.sensormodule.courbet_ofilm_s5kgw3.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.courbet_ofilm_s5kgw3.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.sensormodule.courbet_semco_s5kgw3.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.courbet_semco_s5kgw3.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.sensormodule.courbet_sunny_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.courbet_sunny_imx355_ultra.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.sensormodule.courbet_sunny_s5k5e9.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.courbet_sunny_s5k5e9.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.courbet_ofilm_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.courbet_ofilm_imx355_ultra.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.courbet_ofilm_imx471_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.courbet_ofilm_imx471_front.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.courbet_ofilm_s5k5e9_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.courbet_ofilm_s5k5e9_macro.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.courbet_ofilm_s5kgw3_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.courbet_ofilm_s5kgw3_wide.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.courbet_semco_s5kgw3_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.courbet_semco_s5kgw3_wide.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.courbet_sunny_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.courbet_sunny_imx355_ultra.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.courbet_sunny_imx471_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.courbet_sunny_imx471_front.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.courbet_sunny_s5k5e9_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.courbet_sunny_s5k5e9_macro.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/xiaomi/courbet/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
     vendor/xiaomi/courbet/proprietary/vendor/lib/rfsa/adsp/dirac_resource.dar:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/dirac_resource.dar \
     vendor/xiaomi/courbet/proprietary/vendor/lib/rfsa/adsp/misound_karaoke_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_karaoke_res.bin \
     vendor/xiaomi/courbet/proprietary/vendor/lib/rfsa/adsp/misound_karaokemix_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_karaokemix_res.bin \
@@ -195,10 +174,37 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/courbet/proprietary/vendor/lib64/mibokeh_712_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/mibokeh_712_opencl.bin
 
 PRODUCT_PACKAGES += \
+    btaudio_offload_if \
+    audio.primary.sm6150 \
+    liba2dpoffload \
+    libacdb-fts \
+    libacdbloader \
+    libacdbrtac \
+    libadiertac \
+    libaudcal \
+    libaudio_log_utils \
+    libaudioparsers \
+    libaudioroute_ext \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor \
+    libspkrprot \
     com.qti.sensor.courbet_imx355 \
     com.qti.sensor.courbet_imx471_front \
     com.qti.sensor.courbet_s5k5e9 \
     com.qti.sensor.courbet_s5kgw3 \
+    com.altek.node.depurple \
+    com.altek.node.distortioncorrection \
+    com.arcsoft.node.capturebokeh \
+    com.arcsoft.node.deflicker \
+    com.arcsoft.node.distortioncorrection \
+    com.arcsoft.node.hdr \
+    com.arcsoft.node.hdrchecker \
+    com.arcsoft.node.realtimebokeh \
+    com.arcsoft.node.skinbeautifier \
+    com.arcsoft.node.smoothtransition \
+    com.arcsoft.node.superlowlightraw \
+    com.mi.node.aiasd \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
     com.qti.eisv3 \
@@ -224,6 +230,7 @@ PRODUCT_PACKAGES += \
     com.qti.stats.awb \
     com.qti.stats.awbwrapper \
     com.qti.stats.haf \
+    com.qti.stats.hafoverride \
     com.qti.stats.localhistogram \
     com.qti.stats.pdlib \
     com.qti.stats.pdlibsony \
@@ -232,74 +239,24 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.af \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
-    com.visidon.node.clearshot \
-    libdepthmapwrapper \
-    libmmcamera_cac3 \
-    camera.qcom \
-    com.qti.chi.override \
-    libFaceGrade \
-    libVDClearShot \
-    libXMFD_AgeGender \
-    libcamera2ndk_vendor \
-    libcamera_nn_stub \
-    libcamxfdalgov7 \
-    libcamxfdalgov8 \
-    libcamxfdengine \
-    libcamxstatscore \
-    libcamxswprocessalgo \
-    libcamxtintlessalgo \
-    libcapiv2svacnn \
-    libcapiv2vop \
-    libcom.qti.chinodeutils \
-    libmialgo_fs \
-    libmialgo_rfs \
-    libmialgo_utils \
-    libremosaic_wrapper \
-    libsns_device_mode_stub \
-    libsns_fastRPC_util \
-    libsns_low_lat_stream_stub \
-    libsnsapi \
-    libsnsdiaglog \
-    libswregistrationalgo \
-    btaudio_offload_if \
-    audio.primary.sm6150 \
-    liba2dpoffload \
-    libacdb-fts \
-    libacdbloader \
-    libacdbrtac \
-    libadiertac \
-    libaudcal \
-    libaudio_log_utils \
-    libaudioparsers \
-    libaudioroute_ext \
-    libhdmiedid \
-    libhfp \
-    libsndmonitor \
-    libspkrprot \
-    libvideoutils \
-    com.altek.node.depurple \
-    com.altek.node.distortioncorrection \
-    com.arcsoft.node.capturebokeh \
-    com.arcsoft.node.deflicker \
-    com.arcsoft.node.distortioncorrection \
-    com.arcsoft.node.hdr \
-    com.arcsoft.node.hdrchecker \
-    com.arcsoft.node.realtimebokeh \
-    com.arcsoft.node.skinbeautifier \
-    com.arcsoft.node.smoothtransition \
-    com.arcsoft.node.superlowlightraw \
-    com.mi.node.aiasd \
-    com.qti.stats.hafoverride \
     com.vidhance.node.eis \
     com.vidhance.stats.aec_dmbr \
+    com.visidon.node.clearshot \
     com.xiaomi.node.mibokeh \
     com.xiaomi.node.mifilter \
     com.xiaomi.node.mifragment \
     com.xiaomi.node.mimovie \
     com.xiaomi.node.misegment \
+    libdepthmapwrapper \
+    libmmcamera_cac3 \
+    camera.qcom \
+    com.qti.chi.override \
     consumerir.sm6150 \
     fingerprint.fpc.sm6150 \
+    libFaceGrade \
     libSNPE \
+    libVDClearShot \
+    libXMFD_AgeGender \
     lib_sr_models \
     libalCFR \
     libalLDC \
@@ -318,15 +275,28 @@ PRODUCT_PACKAGES += \
     libbeauty_face_interface \
     libc++_shared \
     libcamera_dirty \
+    libcamera_nn_stub \
     libcamera_scene \
+    libcamxfdalgov7 \
+    libcamxfdalgov8 \
+    libcamxfdengine \
+    libcamxstatscore \
+    libcamxswprocessalgo \
+    libcamxtintlessalgo \
+    libcapiv2svacnn \
+    libcapiv2vop \
+    libcom.qti.chinodeutils \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libft2vendor \
     libhta_hexagon_runtime \
     libhvx_interface \
     libmiai_portraitsupernight \
+    libmialgo_fs \
     libmialgo_ie_capture \
+    libmialgo_rfs \
     libmialgo_sd \
+    libmialgo_utils \
     libmialgoengine \
     libmibokeh_712 \
     libmpbase \
@@ -336,6 +306,7 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libpn553_fw \
     librelight_only \
+    libremosaic_wrapper \
     libremosaiclib \
     libsdk_sr \
     libsensorcal \
@@ -346,9 +317,15 @@ PRODUCT_PACKAGES += \
     libsnpe_dsp_domains_system \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v2_system \
+    libsns_device_mode_stub \
+    libsns_fastRPC_util \
+    libsns_low_lat_stream_stub \
+    libsnsapi \
+    libsnsdiaglog \
     libssc \
     libssc_default_listener \
     libssccalapi \
+    libswregistrationalgo \
     libswvdec \
     libsymphony-cpu \
     libthermalclient \
@@ -363,9 +340,6 @@ PRODUCT_PACKAGES += \
     sensors.mius.proximity \
     sensors.ssc \
     sensors.touch \
-    vendor.qti.hardware.camera.device@1.0_vendor \
-    vendor.qti.hardware.camera.device@2.0_vendor \
-    vendor.qti.hardware.camera.device@3.5_vendor \
     vendor.qti.hardware.fingerprint@1.0 \
     capi_v2_aptX_CLHDAD_Encoder \
     capi_v2_aptX_Classic \
